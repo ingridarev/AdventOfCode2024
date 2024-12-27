@@ -7,3 +7,5 @@ B
 src/Day2Task1.java,c\e\ceab5ecb325771c5527ec7199299a63251745161
 B
 src/Day3Task1.java,a\6\a64e7ac29f7456cee7a11792eb39a0f46c11d64b
+B
+src/Day3Task2.java,6\3\630239b53e9baddd558aa3b9f2071827fd9e3b18

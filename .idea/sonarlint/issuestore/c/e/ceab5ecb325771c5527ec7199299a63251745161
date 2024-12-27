@@ -1,5 +1,11 @@
 
+„
+java:S1319#"gThe type of "numbers" should be an interface such as "List" rather than the implementation "ArrayList".(Ï±‚®8´ƒ·ÉÀ2
+„
+java:S13194"gThe type of "numbers" should be an interface such as "List" rather than the implementation "ArrayList".(ªÄŒ8´ƒ·ÉÀ2
+„
+java:S1319E"gThe type of "numbers" should be an interface such as "List" rather than the implementation "ArrayList".(­ú­¨8´ƒ·ÉÀ2
 0
 java:S1220""Move this file to a named package.
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ıî‚Îûÿÿÿÿ
+L	java:S106	"+Replace this use of System.out by a logger.(Ï¯óÿüÿÿÿÿ8äƒ·ÉÀ2
+L	java:S106 "+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8äƒ·ÉÀ2

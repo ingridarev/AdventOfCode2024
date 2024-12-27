@@ -1,12 +1,11 @@
 import java.util.Scanner;
 import java.util.regex.*;
-import java.util.ArrayList;
 
-public class Day3Task1 {
+public class Day3Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter your text (type 'STOP' to finish): ");
+        System.out.println("Enter your text (type 'STOP' on a new line to finish): ");
 
         StringBuilder text = new StringBuilder();
         while (scanner.hasNextLine()) {
@@ -17,21 +16,29 @@ public class Day3Task1 {
             }
         }
 
-        String pattern = "mul\\((\\d+),(\\d+)\\)|do\\(\\)|don\\'t\\(\\)";
+        String pattern = "mul\\((\\d+),(\\d+)\\)|do\\(\\)|don't\\(\\)";
         Pattern compiledPattern = Pattern.compile(pattern);
         Matcher matcher = compiledPattern.matcher(text.toString());
 
         int sum = 0;
+        boolean inDoSection = true;
 
         while (matcher.find()) {
-            if (matcher.group(1) != null && matcher.group(2) != null) {
+            String matchedText = matcher.group();
+
+            if (matchedText.equals("do()")) {
+                inDoSection = true;
+            } else if (matchedText.equals("don't()")) {
+                inDoSection = false;
+            } else if (inDoSection && matcher.group(1) != null && matcher.group(2) != null) {
                 int firstDigit = Integer.parseInt(matcher.group(1));
                 int secondDigit = Integer.parseInt(matcher.group(2));
                 sum += firstDigit * secondDigit;
             }
         }
 
-        System.out.println("Sum: " + sum);
+        System.out.println("Total sum of calculations: " + sum);
+
         scanner.close();
     }
 }

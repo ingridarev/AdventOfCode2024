@@ -1,5 +1,5 @@
 
 0
 java:S1220""Move this file to a named package.
-X
-java:S2094"BRemove this empty class, write its code or make it an "interface".(úÉÁø
+L	java:S106"+Replace this use of System.out by a logger.(ô°óÁüÿÿÿÿ8µ¼¶ÉÀ2
+L	java:S1064"+Replace this use of System.out by a logger.(Û¤•ÿÿÿÿÿ8Ä¼¶ÉÀ2
